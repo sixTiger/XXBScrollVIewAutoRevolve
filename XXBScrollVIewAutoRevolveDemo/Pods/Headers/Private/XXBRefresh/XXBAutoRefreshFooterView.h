@@ -1,0 +1,1 @@
+../../../XXBRefresh/XXBRefresh/View/XXBAutoRefreshFooterView.h

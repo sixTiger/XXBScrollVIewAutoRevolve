@@ -1,0 +1,19 @@
+{
+  "name": "XXBNav",
+  "requires_arc": true,
+  "version": "0.0.1",
+  "summary": "20160715",
+  "homepage": "https://github.com/sixTiger/XXBNav",
+  "license": "MIT",
+  "authors": {
+    "杨小兵": "six_tiger@163.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/sixTiger/XXBNav.git"
+  },
+  "public_header_files": "XXBNav/XXBNavigationController.h",
+  "source_files": "XXBNav/XXBNavigationController.{h,m}"
+}

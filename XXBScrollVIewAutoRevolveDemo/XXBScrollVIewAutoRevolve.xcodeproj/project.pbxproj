@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AFC886CD4B9B4D30E22A0A3 /* libPods-XXBScrollVIewAutoRevolve.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BAC0BB9F02EAD022315C6E /* libPods-XXBScrollVIewAutoRevolve.a */; };
+		E1439E951D387BA9007ADDF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1439E931D387BA9007ADDF9 /* Main.storyboard */; };
+		E1439E971D387BA9007ADDF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1439E961D387BA9007ADDF9 /* Assets.xcassets */; };
+		E1439E9A1D387BA9007ADDF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1439E981D387BA9007ADDF9 /* LaunchScreen.storyboard */; };
+		E1439EAB1D387CED007ADDF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1439EA41D387CED007ADDF9 /* ViewController.m */; };
+		E1439EAC1D387CED007ADDF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1439EA81D387CED007ADDF9 /* AppDelegate.m */; };
+		E1439EAD1D387CED007ADDF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1439EA91D387CED007ADDF9 /* main.m */; };
+		E1439EB11D387E57007ADDF9 /* XXBScrollViewAutoRevolveController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1439EB01D387E57007ADDF9 /* XXBScrollViewAutoRevolveController.m */; };
+		E1439EB71D38ACB8007ADDF9 /* XXBRefreshHeaderPicView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1439EB61D38ACB8007ADDF9 /* XXBRefreshHeaderPicView.m */; };
+		E1439EBA1D38B45F007ADDF9 /* XXBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1439EB91D38B45F007ADDF9 /* XXBTableView.m */; };
+		E1439EBD1D38D8EC007ADDF9 /* XXBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1439EBC1D38D8EC007ADDF9 /* XXBTableViewController.m */; };
+		E15B310D1D3E73E400B0FE60 /* XXBAutoRevolveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B30F31D3E73E400B0FE60 /* XXBAutoRevolveViewController.m */; };
+		E15B31131D3E73E400B0FE60 /* XXBAutoRevolveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B31021D3E73E400B0FE60 /* XXBAutoRevolveCell.m */; };
+		E15B31151D3E73E400B0FE60 /* XXBAutoRevolveView.m in Sources */ = {isa = PBXBuildFile; fileRef = E15B31061D3E73E400B0FE60 /* XXBAutoRevolveView.m */; };
+		E172578F1D3DD44D009228F6 /* XXBAutoRevolveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E172578E1D3DD44D009228F6 /* XXBAutoRevolveVC.m */; };
+		E17257921D3DFC61009228F6 /* XXBAutoRevolveTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E17257911D3DFC61009228F6 /* XXBAutoRevolveTableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DD4D5D55A968F6B0F3217A7 /* Pods-XXBScrollVIewAutoRevolve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBScrollVIewAutoRevolve.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXBScrollVIewAutoRevolve/Pods-XXBScrollVIewAutoRevolve.debug.xcconfig"; sourceTree = "<group>"; };
+		B4BAC0BB9F02EAD022315C6E /* libPods-XXBScrollVIewAutoRevolve.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XXBScrollVIewAutoRevolve.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1439E871D387BA9007ADDF9 /* XXBScrollVIewAutoRevolve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXBScrollVIewAutoRevolve.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1439E941D387BA9007ADDF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1439E961D387BA9007ADDF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1439E991D387BA9007ADDF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1439E9B1D387BA9007ADDF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1439EA31D387CED007ADDF9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E1439EA41D387CED007ADDF9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E1439EA71D387CED007ADDF9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E1439EA81D387CED007ADDF9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E1439EA91D387CED007ADDF9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1439EAE1D387D7B007ADDF9 /* XXBScrollVIewAutoRevolve.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBScrollVIewAutoRevolve.pch; sourceTree = "<group>"; };
+		E1439EAF1D387E57007ADDF9 /* XXBScrollViewAutoRevolveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBScrollViewAutoRevolveController.h; sourceTree = "<group>"; };
+		E1439EB01D387E57007ADDF9 /* XXBScrollViewAutoRevolveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBScrollViewAutoRevolveController.m; sourceTree = "<group>"; };
+		E1439EB51D38ACB8007ADDF9 /* XXBRefreshHeaderPicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBRefreshHeaderPicView.h; sourceTree = "<group>"; };
+		E1439EB61D38ACB8007ADDF9 /* XXBRefreshHeaderPicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBRefreshHeaderPicView.m; sourceTree = "<group>"; };
+		E1439EB81D38B45F007ADDF9 /* XXBTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBTableView.h; sourceTree = "<group>"; };
+		E1439EB91D38B45F007ADDF9 /* XXBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBTableView.m; sourceTree = "<group>"; };
+		E1439EBB1D38D8EC007ADDF9 /* XXBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBTableViewController.h; sourceTree = "<group>"; };
+		E1439EBC1D38D8EC007ADDF9 /* XXBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBTableViewController.m; sourceTree = "<group>"; };
+		E15B30F21D3E73E400B0FE60 /* XXBAutoRevolveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBAutoRevolveViewController.h; sourceTree = "<group>"; };
+		E15B30F31D3E73E400B0FE60 /* XXBAutoRevolveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBAutoRevolveViewController.m; sourceTree = "<group>"; };
+		E15B31011D3E73E400B0FE60 /* XXBAutoRevolveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBAutoRevolveCell.h; sourceTree = "<group>"; };
+		E15B31021D3E73E400B0FE60 /* XXBAutoRevolveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBAutoRevolveCell.m; sourceTree = "<group>"; };
+		E15B31051D3E73E400B0FE60 /* XXBAutoRevolveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBAutoRevolveView.h; sourceTree = "<group>"; };
+		E15B31061D3E73E400B0FE60 /* XXBAutoRevolveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBAutoRevolveView.m; sourceTree = "<group>"; };
+		E172578D1D3DD44D009228F6 /* XXBAutoRevolveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBAutoRevolveVC.h; sourceTree = "<group>"; };
+		E172578E1D3DD44D009228F6 /* XXBAutoRevolveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBAutoRevolveVC.m; sourceTree = "<group>"; };
+		E17257901D3DFC61009228F6 /* XXBAutoRevolveTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBAutoRevolveTableView.h; sourceTree = "<group>"; };
+		E17257911D3DFC61009228F6 /* XXBAutoRevolveTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBAutoRevolveTableView.m; sourceTree = "<group>"; };
+		FA1F640D09868FBE318E30EE /* Pods-XXBScrollVIewAutoRevolve.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBScrollVIewAutoRevolve.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXBScrollVIewAutoRevolve/Pods-XXBScrollVIewAutoRevolve.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1439E841D387BA9007ADDF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AFC886CD4B9B4D30E22A0A3 /* libPods-XXBScrollVIewAutoRevolve.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C180E62E465AE8FA404CC68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4BAC0BB9F02EAD022315C6E /* libPods-XXBScrollVIewAutoRevolve.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEB91B37B075ADB9C7B165EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DD4D5D55A968F6B0F3217A7 /* Pods-XXBScrollVIewAutoRevolve.debug.xcconfig */,
+				FA1F640D09868FBE318E30EE /* Pods-XXBScrollVIewAutoRevolve.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1439E7E1D387BA9007ADDF9 = {
+			isa = PBXGroup;
+			children = (
+				E1439E891D387BA9007ADDF9 /* XXBScrollVIewAutoRevolve */,
+				E1439E881D387BA9007ADDF9 /* Products */,
+				BEB91B37B075ADB9C7B165EF /* Pods */,
+				0C180E62E465AE8FA404CC68 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1439E881D387BA9007ADDF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1439E871D387BA9007ADDF9 /* XXBScrollVIewAutoRevolve.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1439E891D387BA9007ADDF9 /* XXBScrollVIewAutoRevolve */ = {
+			isa = PBXGroup;
+			children = (
+				E15B30EC1D3E73E400B0FE60 /* XXBScrollVIewAutoRevolve */,
+				E1439EA11D387CED007ADDF9 /* Class */,
+				E1439E931D387BA9007ADDF9 /* Main.storyboard */,
+				E1439E961D387BA9007ADDF9 /* Assets.xcassets */,
+				E1439E981D387BA9007ADDF9 /* LaunchScreen.storyboard */,
+				E1439E9B1D387BA9007ADDF9 /* Info.plist */,
+				E1439E8A1D387BA9007ADDF9 /* Supporting Files */,
+			);
+			path = XXBScrollVIewAutoRevolve;
+			sourceTree = "<group>";
+		};
+		E1439E8A1D387BA9007ADDF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1439EA11D387CED007ADDF9 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				E1439EA21D387CED007ADDF9 /* Controller */,
+				E1439EA51D387CED007ADDF9 /* Model */,
+				E1439EA61D387CED007ADDF9 /* Others */,
+				E1439EAA1D387CED007ADDF9 /* View */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		E1439EA21D387CED007ADDF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E1439EBB1D38D8EC007ADDF9 /* XXBTableViewController.h */,
+				E1439EBC1D38D8EC007ADDF9 /* XXBTableViewController.m */,
+				E1439EA31D387CED007ADDF9 /* ViewController.h */,
+				E1439EA41D387CED007ADDF9 /* ViewController.m */,
+				E1439EAF1D387E57007ADDF9 /* XXBScrollViewAutoRevolveController.h */,
+				E1439EB01D387E57007ADDF9 /* XXBScrollViewAutoRevolveController.m */,
+				E172578D1D3DD44D009228F6 /* XXBAutoRevolveVC.h */,
+				E172578E1D3DD44D009228F6 /* XXBAutoRevolveVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E1439EA51D387CED007ADDF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1439EA61D387CED007ADDF9 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				E1439EA71D387CED007ADDF9 /* AppDelegate.h */,
+				E1439EA81D387CED007ADDF9 /* AppDelegate.m */,
+				E1439EA91D387CED007ADDF9 /* main.m */,
+				E1439EAE1D387D7B007ADDF9 /* XXBScrollVIewAutoRevolve.pch */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		E1439EAA1D387CED007ADDF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1439EB51D38ACB8007ADDF9 /* XXBRefreshHeaderPicView.h */,
+				E1439EB61D38ACB8007ADDF9 /* XXBRefreshHeaderPicView.m */,
+				E1439EB81D38B45F007ADDF9 /* XXBTableView.h */,
+				E1439EB91D38B45F007ADDF9 /* XXBTableView.m */,
+				E17257901D3DFC61009228F6 /* XXBAutoRevolveTableView.h */,
+				E17257911D3DFC61009228F6 /* XXBAutoRevolveTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E15B30EC1D3E73E400B0FE60 /* XXBScrollVIewAutoRevolve */ = {
+			isa = PBXGroup;
+			children = (
+				E15B30ED1D3E73E400B0FE60 /* Controller */,
+				E15B30FA1D3E73E400B0FE60 /* Model */,
+				E15B31001D3E73E400B0FE60 /* View */,
+			);
+			name = XXBScrollVIewAutoRevolve;
+			path = ../../XXBScrollVIewAutoRevolve;
+			sourceTree = "<group>";
+		};
+		E15B30ED1D3E73E400B0FE60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E15B30F21D3E73E400B0FE60 /* XXBAutoRevolveViewController.h */,
+				E15B30F31D3E73E400B0FE60 /* XXBAutoRevolveViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E15B30FA1D3E73E400B0FE60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E15B31001D3E73E400B0FE60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E15B31011D3E73E400B0FE60 /* XXBAutoRevolveCell.h */,
+				E15B31021D3E73E400B0FE60 /* XXBAutoRevolveCell.m */,
+				E15B31051D3E73E400B0FE60 /* XXBAutoRevolveView.h */,
+				E15B31061D3E73E400B0FE60 /* XXBAutoRevolveView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1439E861D387BA9007ADDF9 /* XXBScrollVIewAutoRevolve */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1439E9E1D387BA9007ADDF9 /* Build configuration list for PBXNativeTarget "XXBScrollVIewAutoRevolve" */;
+			buildPhases = (
+				255AC6D0C5E4920A508033DE /* [CP] Check Pods Manifest.lock */,
+				E1439E831D387BA9007ADDF9 /* Sources */,
+				E1439E841D387BA9007ADDF9 /* Frameworks */,
+				E1439E851D387BA9007ADDF9 /* Resources */,
+				D7BF380570D9C2156A8C14EC /* [CP] Embed Pods Frameworks */,
+				AF389D783257F85EC10999F6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XXBScrollVIewAutoRevolve;
+			productName = XXBScrollVIewAutoRevolve;
+			productReference = E1439E871D387BA9007ADDF9 /* XXBScrollVIewAutoRevolve.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1439E7F1D387BA9007ADDF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.baidu;
+				TargetAttributes = {
+					E1439E861D387BA9007ADDF9 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E1439E821D387BA9007ADDF9 /* Build configuration list for PBXProject "XXBScrollVIewAutoRevolve" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1439E7E1D387BA9007ADDF9;
+			productRefGroup = E1439E881D387BA9007ADDF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1439E861D387BA9007ADDF9 /* XXBScrollVIewAutoRevolve */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1439E851D387BA9007ADDF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1439E9A1D387BA9007ADDF9 /* LaunchScreen.storyboard in Resources */,
+				E1439E971D387BA9007ADDF9 /* Assets.xcassets in Resources */,
+				E1439E951D387BA9007ADDF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		255AC6D0C5E4920A508033DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF389D783257F85EC10999F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBScrollVIewAutoRevolve/Pods-XXBScrollVIewAutoRevolve-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7BF380570D9C2156A8C14EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBScrollVIewAutoRevolve/Pods-XXBScrollVIewAutoRevolve-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1439E831D387BA9007ADDF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17257921D3DFC61009228F6 /* XXBAutoRevolveTableView.m in Sources */,
+				E1439EAB1D387CED007ADDF9 /* ViewController.m in Sources */,
+				E1439EAD1D387CED007ADDF9 /* main.m in Sources */,
+				E1439EAC1D387CED007ADDF9 /* AppDelegate.m in Sources */,
+				E15B310D1D3E73E400B0FE60 /* XXBAutoRevolveViewController.m in Sources */,
+				E1439EBA1D38B45F007ADDF9 /* XXBTableView.m in Sources */,
+				E1439EB71D38ACB8007ADDF9 /* XXBRefreshHeaderPicView.m in Sources */,
+				E15B31131D3E73E400B0FE60 /* XXBAutoRevolveCell.m in Sources */,
+				E1439EBD1D38D8EC007ADDF9 /* XXBTableViewController.m in Sources */,
+				E15B31151D3E73E400B0FE60 /* XXBAutoRevolveView.m in Sources */,
+				E172578F1D3DD44D009228F6 /* XXBAutoRevolveVC.m in Sources */,
+				E1439EB11D387E57007ADDF9 /* XXBScrollViewAutoRevolveController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E1439E931D387BA9007ADDF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1439E941D387BA9007ADDF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1439E981D387BA9007ADDF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1439E991D387BA9007ADDF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1439E9C1D387BA9007ADDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1439E9D1D387BA9007ADDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1439E9F1D387BA9007ADDF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD4D5D55A968F6B0F3217A7 /* Pods-XXBScrollVIewAutoRevolve.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = $SRCROOT/XXBScrollVIewAutoRevolve/Class/Others/XXBScrollVIewAutoRevolve.pch;
+				INFOPLIST_FILE = XXBScrollVIewAutoRevolve/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.XXBScrollVIewAutoRevolve;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E1439EA01D387BA9007ADDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1F640D09868FBE318E30EE /* Pods-XXBScrollVIewAutoRevolve.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = $SRCROOT/XXBScrollVIewAutoRevolve/Class/Others/XXBScrollVIewAutoRevolve.pch;
+				INFOPLIST_FILE = XXBScrollVIewAutoRevolve/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.XXBScrollVIewAutoRevolve;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1439E821D387BA9007ADDF9 /* Build configuration list for PBXProject "XXBScrollVIewAutoRevolve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1439E9C1D387BA9007ADDF9 /* Debug */,
+				E1439E9D1D387BA9007ADDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1439E9E1D387BA9007ADDF9 /* Build configuration list for PBXNativeTarget "XXBScrollVIewAutoRevolve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1439E9F1D387BA9007ADDF9 /* Debug */,
+				E1439EA01D387BA9007ADDF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1439E7F1D387BA9007ADDF9 /* Project object */;
+}

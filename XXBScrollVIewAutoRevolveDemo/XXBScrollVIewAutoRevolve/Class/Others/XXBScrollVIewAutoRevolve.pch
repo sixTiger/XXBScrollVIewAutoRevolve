@@ -1,0 +1,16 @@
+//
+//  XXBScrollVIewAutoRevolve.pch
+//  XXBScrollVIewAutoRevolve
+//
+//  Created by baidu on 16/7/15.
+//  Copyright © 2016年 com.baidu. All rights reserved.
+//
+
+#ifndef XXBScrollVIewAutoRevolve_pch
+#define XXBScrollVIewAutoRevolve_pch
+
+#ifdef __OBJC__
+#import <XXBLibs.h>
+#endif
+
+#endif /* XXBScrollVIewAutoRevolve_pch */

@@ -1,0 +1,49 @@
+PODS:
+  - XXBLibs (0.0.1):
+    - XXBLibs/Category (= 0.0.1)
+    - XXBLibs/Class (= 0.0.1)
+    - XXBLibs/Others (= 0.0.1)
+  - XXBLibs/Category (0.0.1)
+  - XXBLibs/Class (0.0.1):
+    - XXBLibs/Others
+  - XXBLibs/Others (0.0.1)
+  - XXBNav (0.0.1)
+  - XXBRefresh (0.0.1):
+    - XXBRefresh/Others (= 0.0.1)
+    - XXBRefresh/View (= 0.0.1)
+  - XXBRefresh/Others (0.0.1)
+  - XXBRefresh/View (0.0.1):
+    - XXBRefresh/Others
+
+DEPENDENCIES:
+  - XXBLibs (from `https://github.com/sixTiger/XXBLibs`)
+  - XXBNav (from `https://github.com/sixTiger/XXBNav`)
+  - XXBRefresh (from `https://github.com/sixTiger/XXBRefresh`)
+
+EXTERNAL SOURCES:
+  XXBLibs:
+    :git: https://github.com/sixTiger/XXBLibs
+  XXBNav:
+    :git: https://github.com/sixTiger/XXBNav
+  XXBRefresh:
+    :git: https://github.com/sixTiger/XXBRefresh
+
+CHECKOUT OPTIONS:
+  XXBLibs:
+    :commit: a176331313fe7d82a5f26beda5f1b1681cf1ed52
+    :git: https://github.com/sixTiger/XXBLibs
+  XXBNav:
+    :commit: 018ef3e063681beb08fcb8bd4e71861eafb0c37a
+    :git: https://github.com/sixTiger/XXBNav
+  XXBRefresh:
+    :commit: cd8e558676b0cd8670c2c8931fe3a72b7b75e41e
+    :git: https://github.com/sixTiger/XXBRefresh
+
+SPEC CHECKSUMS:
+  XXBLibs: 247d1f4599815c7696b015828643e123a832bcfb
+  XXBNav: bdb9c93d91339fed1d7b55ace6a587ce9a19e460
+  XXBRefresh: 32fa52d120bf254165c938754b81b794790e6714
+
+PODFILE CHECKSUM: 913a25fb645ea2b26631c92e4deebef1da071665
+
+COCOAPODS: 1.0.1

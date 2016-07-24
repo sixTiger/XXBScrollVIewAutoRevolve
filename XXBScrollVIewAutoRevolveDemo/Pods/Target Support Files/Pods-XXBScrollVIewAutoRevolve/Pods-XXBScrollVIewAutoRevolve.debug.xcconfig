@@ -1,0 +1,8 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/XXBLibs" "${PODS_ROOT}/Headers/Public/XXBNav" "${PODS_ROOT}/Headers/Public/XXBRefresh"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/XXBLibs" "$PODS_CONFIGURATION_BUILD_DIR/XXBNav" "$PODS_CONFIGURATION_BUILD_DIR/XXBRefresh"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/XXBLibs" -isystem "${PODS_ROOT}/Headers/Public/XXBNav" -isystem "${PODS_ROOT}/Headers/Public/XXBRefresh"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"XXBLibs" -l"XXBNav" -l"XXBRefresh"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods
