@@ -59,4 +59,5 @@
 
 - (void)reloadData;
 - (void)reloadPageFrames;
+- (void)scrollToIndex:(NSUInteger)index;
 @end

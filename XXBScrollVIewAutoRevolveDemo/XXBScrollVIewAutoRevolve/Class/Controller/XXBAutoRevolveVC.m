@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setUPNaviaItem];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,8 +26,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)setUPNaviaItem {
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(scrollToIndex)];
+}
+
+- (void)scrollToIndex {
+    [self.autoRevolveView scrollToIndex:5];
+}
+
 - (NSInteger)numberOfAutoRevolveCellForViewPage:(XXBAutoRevolveView *)autoRevolveView {
-    return 3;
+    return 6;
 }
 
 - (XXBAutoRevolveCell *)autoRevolveView:(XXBAutoRevolveView *)autoRevolveView cellForIndex:(NSUInteger)index {

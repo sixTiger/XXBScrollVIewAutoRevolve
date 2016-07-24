@@ -134,14 +134,34 @@ static NSString *contentOffset = @"contentOffset";
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
     if (keyPath == contentOffset && self.shouldChangeIndex) {
         CGPoint newContentoffset = [change[@"new"] CGPointValue];
-        _realIndex = (NSUInteger)(newContentoffset.x / CGRectGetWidth(self.bounds) + 0.5);
-        if (_realIndex >= self.pageCount && self.pageCount > 0) {
-            _realIndex = self.pageCount - 1;
+        if (CGRectGetWidth(self.bounds) < 1.0) {
+            return;
+        } else {
+            _realIndex = (NSUInteger)(newContentoffset.x / CGRectGetWidth(self.bounds) + 0.5);
+            if (_realIndex >= self.pageCount && self.pageCount > 0) {
+                _realIndex = self.pageCount - 1;
+            }
         }
     }
 }
 
 #pragma mark - function
+- (XXBAutoRevolveCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier {
+    __block XXBAutoRevolveCell *reusableAutoRevolveCell = nil;
+    NSMutableSet *cellSet = [self.reusableCellDict valueForKey:identifier];
+    if (cellSet.count > 0) {
+        reusableAutoRevolveCell = [cellSet anyObject];
+        if (reusableAutoRevolveCell) { // 从缓存池中移除
+            [cellSet removeObject:reusableAutoRevolveCell];
+            return reusableAutoRevolveCell;
+        } else {
+            return nil;
+        }
+    } else {
+        return nil;
+    }
+}
+
 - (void)reloadData {
     [self reloadPageFrames];
     //    清空之前的所有数据
@@ -161,7 +181,7 @@ static NSString *contentOffset = @"contentOffset";
 - (void)reloadPageFrames {
     [self reloadPageCount];
     self.contentSize = [self contentSizeOfAutoRevolve];
-    [self scrollPageToIndex:self.realIndex];
+    [self scrollPageToIndex:self.realIndex andimation:NO];
     [self.cellFrames removeAllObjects];
     // 计算所有cell的frame
     for (NSUInteger i = 0; i < self.pageCount; i++) {
@@ -175,26 +195,21 @@ static NSString *contentOffset = @"contentOffset";
     }
 }
 
-- (XXBAutoRevolveCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier {
-    __block XXBAutoRevolveCell *reusableAutoRevolveCell = nil;
-    NSMutableSet *cellSet = [self.reusableCellDict valueForKey:identifier];
-    if (cellSet.count > 0) {
-        reusableAutoRevolveCell = [cellSet anyObject];
-        if (reusableAutoRevolveCell) { // 从缓存池中移除
-            [cellSet removeObject:reusableAutoRevolveCell];
-            return reusableAutoRevolveCell;
-        } else {
-            return nil;
-        }
-    } else {
-        return nil;
-    }
+- (void)scrollToIndex:(NSUInteger)index {
+    [self scrollPageToIndex:index andimation:YES];
 }
 
 #pragma mark - Pirvate function
 
-- (void)scrollPageToIndex:(NSUInteger)index {
-    self.contentOffset = CGPointMake([self frameOfPageViewWithIndex:index].origin.x - self.margin, 0);
+- (void)scrollPageToIndex:(NSUInteger)index andimation:(BOOL)animation {
+    if(index >= self.pageCount) {
+        if (self.pageCount > 0) {
+            index = self.pageCount - 1;
+        } else {
+            index = 0;
+        }
+    }
+    [self setContentOffset:CGPointMake([self frameOfPageViewWithIndex:index].origin.x - self.margin, 0) animated:animation];
 }
 
 - (CGSize)contentSizeOfAutoRevolve {
@@ -237,7 +252,7 @@ static NSString *contentOffset = @"contentOffset";
 - (void)setCurrentIndex:(NSUInteger)currentIndex {
     _currentIndex = currentIndex;
     _realIndex = currentIndex;
-    [self scrollPageToIndex:_currentIndex];
+    [self scrollPageToIndex:_currentIndex andimation:NO];
 }
 
 - (NSUInteger)currentIndex {
